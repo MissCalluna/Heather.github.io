@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>GetClassy</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="icon" type="image/png" href="images/icon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.php">GetClassy.com</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <!--li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li-->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Products
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="search.php?searchQuery=tee">Necklaces</a>
+                            <a class="dropdown-item" href="search.php?searchQuery=mug">Rings</a>
+                            <a class="dropdown-item" href="search.php?searchQuery=bottle">Earrings</a>
+                            <a class="dropdown-item" href="search.php?searchQuery=lunch">Anklets and Bracelets</a>
+                            <!--div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Other Products</a>
+                            <a class="dropdown-item" href="#">Drugs</a-->
+                            </div>
+                        </li>
+                    </ul>
+
+                    
+                    <form class="form-inline my-2 my-lg-0" method="GET" action="search.php">
+                        <input class="form-control mr-sm-2" type="text" name="searchQuery" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="border: 1px solid white; color:white;">Search</button>
+                    </form>
+                    
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="col-md-2"></div>
+        
+        <div class="col-md-6 mx-auto">
+            <br><h2 class="text-center">Top Products</h2>
+
+            <div class="row">
+                                <div class="col-md-6 col-12" >
+                    <div class="content-box" style=" margin: 100 auto; padding: 20px;">
+                        <img src="/images/mug1.jpg" alt="Chinese Mug Black" height="250px"/>
+                        <h4><b> Chinese Mug Black </b></h4>
+                        <p class="bname">Brand-name: MyMug, Co.</p>
+                        <p class="desc">Description: This is a black mug, man</p>
+                        <p class="lprice">USD$0.50</p>
+                        <!--
+                        <form method="get" action="details.php">
+                            <button type="submit" value="kjkj"  class="btn btn-success" data-bs-toggle="modal" data-target="#details-1">More</button>
+                        </form>
+                        -->
+                        <form method="GET" action="details.php">
+                            <input type="hidden" name="title" value="Chinese Mug Black">
+                            <input type="submit" value="View Details" class="btn btn-success" data-bs-toggle="modal" data-target="#details-1" style="background-color: #212529; border-radius:15px; border: 0px;">
+                        </form>
+                        <br>
+                        <!--button action="" class="btn btn-success">Add to Cart</button-->
+                    </div>
+                </div>
+
+                                <div class="col-md-6 col-12" >
+                    <div class="content-box" style=" margin: 100 auto; padding: 20px;">
+                        <img src="/images/tee1.jpg" alt="Grey Tee with design" height="250px"/>
+                        <h4><b> Grey Tee with design </b></h4>
+                        <p class="bname">Brand-name: Levi's</p>
+                        <p class="desc">Description: This is a nice tee that you can wear casually during the summer.</p>
+                        <p class="lprice">USD$8.99</p>
+                        <!--
+                        <form method="get" action="details.php">
+                            <button type="submit" value="kjkj"  class="btn btn-success" data-bs-toggle="modal" data-target="#details-1">More</button>
+                        </form>
+                        -->
+                        <form method="GET" action="details.php">
+                            <input type="hidden" name="title" value="Grey Tee with design">
+                            <input type="submit" value="View Details" class="btn btn-success" data-bs-toggle="modal" data-target="#details-1" style="background-color: #212529; border-radius:15px; border: 0px;">
+                        </form>
+                        <br>
+                        <!--button action="" class="btn btn-success">Add to Cart</button-->
+                    </div>
+                </div>
+
+                                <div class="col-md-6 col-12" >
+                    <div class="content-box" style=" margin: 100 auto; padding: 20px;">
+                        <img src="/images/tee3.webp" alt="Black T-shirt with gold label" height="250px"/>
+                        <h4><b> Black T-shirt with gold label </b></h4>
+                        <p class="bname">Brand-name: GoldLabelUK</p>
+                        <p class="desc">Description: This is a 100% cotton black tee that comes with a gold GoldLabel crest at the left. It's a limited edition purchase.</p>
+                        <p class="lprice">USD$12.45</p>
+                        <!--
+                        <form method="get" action="details.php">
+                            <button type="submit" value="kjkj"  class="btn btn-success" data-bs-toggle="modal" data-target="#details-1">More</button>
+                        </form>
+                        -->
+                        <form method="GET" action="details.php">
+                            <input type="hidden" name="title" value="Black T-shirt with gold label">
+                            <input type="submit" value="View Details" class="btn btn-success" data-bs-toggle="modal" data-target="#details-1" style="background-color: #212529; border-radius:15px; border: 0px;">
+                        </form>
+                        <br>
+                        <!--button action="" class="btn btn-success">Add to Cart</button-->
+                    </div>
+                </div>
+
+                                <div class="col-md-6 col-12" >
+                    <div class="content-box" style=" margin: 100 auto; padding: 20px;">
+                        <img src="/images/mug3.jpg" alt="British Mug" height="250px"/>
+                        <h4><b> British Mug </b></h4>
+                        <p class="bname">Brand-name: Brittons, Pvt Ltd</p>
+                        <p class="desc">Description: This is a mug with the british flag/union jack at the side. Made in China though.</p>
+                        <p class="lprice">USD$6.75</p>
+                        <!--
+                        <form method="get" action="details.php">
+                            <button type="submit" value="kjkj"  class="btn btn-success" data-bs-toggle="modal" data-target="#details-1">More</button>
+                        </form>
+                        -->
+                        <form method="GET" action="details.php">
+                            <input type="hidden" name="title" value="British Mug">
+                            <input type="submit" value="View Details" class="btn btn-success" data-bs-toggle="modal" data-target="#details-1" style="background-color: #212529; border-radius:15px; border: 0px;">
+                        </form>
+                        <br>
+                        <!--button action="" class="btn btn-success">Add to Cart</button-->
+                    </div>
+                </div>
+
+                                <div class="col-md-6 col-12" >
+                    <div class="content-box" style=" margin: 100 auto; padding: 20px;">
+                        <img src="/images/mug2.webp" alt="New York Mug" height="250px"/>
+                        <h4><b> New York Mug </b></h4>
+                        <p class="bname">Brand-name: NY Accesories</p>
+                        <p class="desc">Description: This mug is from the the Empire State of New York.</p>
+                        <p class="lprice">USD$1.30</p>
+                        <!--
+                        <form method="get" action="details.php">
+                            <button type="submit" value="kjkj"  class="btn btn-success" data-bs-toggle="modal" data-target="#details-1">More</button>
+                        </form>
+                        -->
+                        <form method="GET" action="details.php">
+                            <input type="hidden" name="title" value="New York Mug">
+                            <input type="submit" value="View Details" class="btn btn-success" data-bs-toggle="modal" data-target="#details-1" style="background-color: #212529; border-radius:15px; border: 0px;">
+                        </form>
+                        <br>
+                        <!--button action="" class="btn btn-success">Add to Cart</button-->
+                    </div>
+                </div>
+
+                                <div class="col-md-6 col-12" >
+                    <div class="content-box" style=" margin: 100 auto; padding: 20px;">
+                        <img src="/images/bott.webp" alt="White Bottle" height="250px"/>
+                        <h4><b> White Bottle </b></h4>
+                        <p class="bname">Brand-name: TheBottler.com</p>
+                        <p class="desc">Description: White Bottle, with text at the centre</p>
+                        <p class="lprice">USD$3.50</p>
+                        <!--
+                        <form method="get" action="details.php">
+                            <button type="submit" value="kjkj"  class="btn btn-success" data-bs-toggle="modal" data-target="#details-1">More</button>
+                        </form>
+                        -->
+                        <form method="GET" action="details.php">
+                            <input type="hidden" name="title" value="White Bottle">
+                            <input type="submit" value="View Details" class="btn btn-success" data-bs-toggle="modal" data-target="#details-1" style="background-color: #212529; border-radius:15px; border: 0px;">
+                        </form>
+                        <br>
+                        <!--button action="" class="btn btn-success">Add to Cart</button-->
+                    </div>
+                </div>
+
+                                <div class="col-md-6 col-12" >
+                    <div class="content-box" style=" margin: 100 auto; padding: 20px;">
+                        <img src="/images/bottl.jpg" alt="Navy Blue Bottle" height="250px"/>
+                        <h4><b> Navy Blue Bottle </b></h4>
+                        <p class="bname">Brand-name: Magner</p>
+                        <p class="desc">Description: Navy Blue Bottle with metal opener, limited edition.</p>
+                        <p class="lprice">USD$7.30</p>
+                        <!--
+                        <form method="get" action="details.php">
+                            <button type="submit" value="kjkj"  class="btn btn-success" data-bs-toggle="modal" data-target="#details-1">More</button>
+                        </form>
+                        -->
+                        <form method="GET" action="details.php">
+                            <input type="hidden" name="title" value="Navy Blue Bottle">
+                            <input type="submit" value="View Details" class="btn btn-success" data-bs-toggle="modal" data-target="#details-1" style="background-color: #212529; border-radius:15px; border: 0px;">
+                        </form>
+                        <br>
+                        <!--button action="" class="btn btn-success">Add to Cart</button-->
+                    </div>
+                </div>
+
+                                <div class="col-md-6 col-12" >
+                    <div class="content-box" style=" margin: 100 auto; padding: 20px;">
+                        <img src="/images/bott2.webp" alt="Amarni Customizable bottle" height="250px"/>
+                        <h4><b> Amarni Customizable bottle </b></h4>
+                        <p class="bname">Brand-name: Armani and Bottler Co.</p>
+                        <p class="desc">Description: Customizable bottle from Amarni and Bottler Co, enquire for additional details</p>
+                        <p class="lprice">USD$9.99</p>
+                        <!--
+                        <form method="get" action="details.php">
+                            <button type="submit" value="kjkj"  class="btn btn-success" data-bs-toggle="modal" data-target="#details-1">More</button>
+                        </form>
+                        -->
+                        <form method="GET" action="details.php">
+                            <input type="hidden" name="title" value="Amarni Customizable bottle">
+                            <input type="submit" value="View Details" class="btn btn-success" data-bs-toggle="modal" data-target="#details-1" style="background-color: #212529; border-radius:15px; border: 0px;">
+                        </form>
+                        <br>
+                        <!--button action="" class="btn btn-success">Add to Cart</button-->
+                    </div>
+                </div>
+
+                                <div class="col-md-6 col-12" >
+                    <div class="content-box" style=" margin: 100 auto; padding: 20px;">
+                        <img src="/images/bott3.webp" alt="Transparent customizable bottle" height="250px"/>
+                        <h4><b> Transparent customizable bottle </b></h4>
+                        <p class="bname">Brand-name: Armani and Bottler Co.</p>
+                        <p class="desc">Description: Armani and Bottler Transparent customizable bottle</p>
+                        <p class="lprice">USD$7.99</p>
+                        <!--
+                        <form method="get" action="details.php">
+                            <button type="submit" value="kjkj"  class="btn btn-success" data-bs-toggle="modal" data-target="#details-1">More</button>
+                        </form>
+                        -->
+                        <form method="GET" action="details.php">
+                            <input type="hidden" name="title" value="Transparent customizable bottle">
+                            <input type="submit" value="View Details" class="btn btn-success" data-bs-toggle="modal" data-target="#details-1" style="background-color: #212529; border-radius:15px; border: 0px;">
+                        </form>
+                        <br>
+                        <!--button action="" class="btn btn-success">Add to Cart</button-->
+                    </div>
+                </div>
+
+                                <div class="col-md-6 col-12" >
+                    <div class="content-box" style=" margin: 100 auto; padding: 20px;">
+                        <img src="images/tee4.png" alt="White Tee with large black print" height="250px"/>
+                        <h4><b> White Tee with large black print </b></h4>
+                        <p class="bname">Brand-name: Modern US</p>
+                        <p class="desc">Description: White Tee with large black print, tee</p>
+                        <p class="lprice">USD$16.00</p>
+                        <!--
+                        <form method="get" action="details.php">
+                            <button type="submit" value="kjkj"  class="btn btn-success" data-bs-toggle="modal" data-target="#details-1">More</button>
+                        </form>
+                        -->
+                        <form method="GET" action="details.php">
+                            <input type="hidden" name="title" value="White Tee with large black print">
+                            <input type="submit" value="View Details" class="btn btn-success" data-bs-toggle="modal" data-target="#details-1" style="background-color: #212529; border-radius:15px; border: 0px;">
+                        </form>
+                        <br>
+                        <!--button action="" class="btn btn-success">Add to Cart</button-->
+                    </div>
+                </div>
+
+                                <div class="col-md-6 col-12" >
+                    <div class="content-box" style=" margin: 100 auto; padding: 20px;">
+                        <img src="images/mug4.webp" alt="White mug with black print" height="250px"/>
+                        <h4><b> White mug with black print </b></h4>
+                        <p class="bname">Brand-name: Mugger Ltd.</p>
+                        <p class="desc">Description: White mug with large black print</p>
+                        <p class="lprice">USD$3.25</p>
+                        <!--
+                        <form method="get" action="details.php">
+                            <button type="submit" value="kjkj"  class="btn btn-success" data-bs-toggle="modal" data-target="#details-1">More</button>
+                        </form>
+                        -->
+                        <form method="GET" action="details.php">
+                            <input type="hidden" name="title" value="White mug with black print">
+                            <input type="submit" value="View Details" class="btn btn-success" data-bs-toggle="modal" data-target="#details-1" style="background-color: #212529; border-radius:15px; border: 0px;">
+                        </form>
+                        <br>
+                        <!--button action="" class="btn btn-success">Add to Cart</button-->
+                    </div>
+                </div>
+
+                                <div class="col-md-6 col-12" >
+                    <div class="content-box" style=" margin: 100 auto; padding: 20px;">
+                        <img src="images/lunch4.webp" alt="Green and cream lunch box" height="250px"/>
+                        <h4><b> Green and cream lunch box </b></h4>
+                        <p class="bname">Brand-name: Mugger Ltd.</p>
+                        <p class="desc">Description: Classic green and cream lunch box with new dividers</p>
+                        <p class="lprice">USD$1.60</p>
+                        <!--
+                        <form method="get" action="details.php">
+                            <button type="submit" value="kjkj"  class="btn btn-success" data-bs-toggle="modal" data-target="#details-1">More</button>
+                        </form>
+                        -->
+                        <form method="GET" action="details.php">
+                            <input type="hidden" name="title" value="Green and cream lunch box">
+                            <input type="submit" value="View Details" class="btn btn-success" data-bs-toggle="modal" data-target="#details-1" style="background-color: #212529; border-radius:15px; border: 0px;">
+                        </form>
+                        <br>
+                        <!--button action="" class="btn btn-success">Add to Cart</button-->
+                    </div>
+                </div>
+
+                                <div class="col-md-6 col-12" >
+                    <div class="content-box" style=" margin: 100 auto; padding: 20px;">
+                        <img src="images/lunch.webp" alt="Multiset green lunch box" height="250px"/>
+                        <h4><b> Multiset green lunch box </b></h4>
+                        <p class="bname">Brand-name: Zhonguo Pty. Ltd.</p>
+                        <p class="desc">Description: Multiset green lunch box with three removable units</p>
+                        <p class="lprice">USD$8.50</p>
+                        <!--
+                        <form method="get" action="details.php">
+                            <button type="submit" value="kjkj"  class="btn btn-success" data-bs-toggle="modal" data-target="#details-1">More</button>
+                        </form>
+                        -->
+                        <form method="GET" action="details.php">
+                            <input type="hidden" name="title" value="Multiset green lunch box">
+                            <input type="submit" value="View Details" class="btn btn-success" data-bs-toggle="modal" data-target="#details-1" style="background-color: #212529; border-radius:15px; border: 0px;">
+                        </form>
+                        <br>
+                        <!--button action="" class="btn btn-success">Add to Cart</button-->
+                    </div>
+                </div>
+
+                                <div class="col-md-6 col-12" >
+                    <div class="content-box" style=" margin: 100 auto; padding: 20px;">
+                        <img src="images/tee5.jpg" alt="Black T-shirt with print" height="250px"/>
+                        <h4><b> Black T-shirt with print </b></h4>
+                        <p class="bname">Brand-name: Orient Inc.</p>
+                        <p class="desc">Description: Black tee with large man print at the front. Limited Edition (t-shirt)</p>
+                        <p class="lprice">USD$12.45</p>
+                        <!--
+                        <form method="get" action="details.php">
+                            <button type="submit" value="kjkj"  class="btn btn-success" data-bs-toggle="modal" data-target="#details-1">More</button>
+                        </form>
+                        -->
+                        <form method="GET" action="details.php">
+                            <input type="hidden" name="title" value="Black T-shirt with print">
+                            <input type="submit" value="View Details" class="btn btn-success" data-bs-toggle="modal" data-target="#details-1" style="background-color: #212529; border-radius:15px; border: 0px;">
+                        </form>
+                        <br>
+                        <!--button action="" class="btn btn-success">Add to Cart</button-->
+                    </div>
+                </div>
+
+                                <div class="col-md-6 col-12" >
+                    <div class="content-box" style=" margin: 100 auto; padding: 20px;">
+                        <img src="images/tee2.jpg" alt="White T-shirt with print" height="250px"/>
+                        <h4><b> White T-shirt with print </b></h4>
+                        <p class="bname">Brand-name: Orient Inc.</p>
+                        <p class="desc">Description: White tee with bottom grey and black print</p>
+                        <p class="lprice">USD$17.95</p>
+                        <!--
+                        <form method="get" action="details.php">
+                            <button type="submit" value="kjkj"  class="btn btn-success" data-bs-toggle="modal" data-target="#details-1">More</button>
+                        </form>
+                        -->
+                        <form method="GET" action="details.php">
+                            <input type="hidden" name="title" value="White T-shirt with print">
+                            <input type="submit" value="View Details" class="btn btn-success" data-bs-toggle="modal" data-target="#details-1" style="background-color: #212529; border-radius:15px; border: 0px;">
+                        </form>
+                        <br>
+                        <!--button action="" class="btn btn-success">Add to Cart</button-->
+                    </div>
+                </div>
+
+                                <div class="col-md-6 col-12" >
+                    <div class="content-box" style=" margin: 100 auto; padding: 20px;">
+                        <img src="images/lunch2.jpg" alt="Simple green lunch box with dividers" height="250px"/>
+                        <h4><b> Simple green lunch box with dividers </b></h4>
+                        <p class="bname">Brand-name: Boxer Pvt Ltd.</p>
+                        <p class="desc">Description: Simple quality green lunch box with dividers for kids and adults</p>
+                        <p class="lprice">USD$3.00</p>
+                        <!--
+                        <form method="get" action="details.php">
+                            <button type="submit" value="kjkj"  class="btn btn-success" data-bs-toggle="modal" data-target="#details-1">More</button>
+                        </form>
+                        -->
+                        <form method="GET" action="details.php">
+                            <input type="hidden" name="title" value="Simple green lunch box with dividers">
+                            <input type="submit" value="View Details" class="btn btn-success" data-bs-toggle="modal" data-target="#details-1" style="background-color: #212529; border-radius:15px; border: 0px;">
+                        </form>
+                        <br>
+                        <!--button action="" class="btn btn-success">Add to Cart</button-->
+                    </div>
+                </div>
+
+                                <div class="col-md-6 col-12" >
+                    <div class="content-box" style=" margin: 100 auto; padding: 20px;">
+                        <img src="images/lunch3.jpg" alt="Multiple set lunch box set" height="250px"/>
+                        <h4><b> Multiple set lunch box set </b></h4>
+                        <p class="bname">Brand-name: Multikultur Gmbh.</p>
+                        <p class="desc">Description: Multiple set, 3unit lunch pack, from Checkers.</p>
+                        <p class="lprice">USD$4.99</p>
+                        <!--
+                        <form method="get" action="details.php">
+                            <button type="submit" value="kjkj"  class="btn btn-success" data-bs-toggle="modal" data-target="#details-1">More</button>
+                        </form>
+                        -->
+                        <form method="GET" action="details.php">
+                            <input type="hidden" name="title" value="Multiple set lunch box set">
+                            <input type="submit" value="View Details" class="btn btn-success" data-bs-toggle="modal" data-target="#details-1" style="background-color: #212529; border-radius:15px; border: 0px;">
+                        </form>
+                        <br>
+                        <!--button action="" class="btn btn-success">Add to Cart</button-->
+                    </div>
+                </div>
+
+                            </div>
+        </div>
+    </main>
+        <!-- Footer -->
+    <footer class="bg-dark text-white pt-4">
+        <div class="container">
+            <div class="row">
+            <!-- Company Info -->
+            <div class="col-md-4">
+                <h5>Nkosiyapha Ncube</h5>
+                <p>
+                H230267Z<br>
+                Web Technologies Project<br>
+                Harare Institute of Technology<br>
+                Ganges Rd. Harare<br>
+                </p>
+            </div>
+            
+            <!-- Quick Links -->
+            <div class="col-md-4">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                <li><a href="index.php" class="text-white">Home</a></li>
+                <li><a href="search.php?searchQuery=tee" class="text-white">T-shirts</a></li>
+                <li><a href="search.php?searchQuery=mug" class="text-white">Mugs</a></li>
+                <li><a href="search.php?searchQuery=bottle" class="text-white">Bottles</a></li>
+                <li><a href="search.php?searchQuery=lunch" class="text-white">Lunch-Boxes</a></li>
+                </ul>
+            </div>
+            
+            <!-- Social Media -->
+            <div class="col-md-4">
+                <h5>Follow Me</h5>
+                <a href="https://www.facebook.com/ncnkosiyapha/" class="text-white me-2"><i class="bi bi-facebook"></i></a>
+                <a href="https://x.com/Nkosiyapha_" class="text-white me-2"><i class="bi bi-twitter"></i></a>
+                <a href="https://instagram.com/nkosiyaphancube" class="text-white me-2"><i class="bi bi-instagram"></i></a>
+                <a href="https://linkedin.com/in/nkosiyaphancube" class="text-white"><i class="bi bi-linkedin"></i></a>
+                <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css" rel="stylesheet">
+            </div>
+            </div>
+            
+            <hr class="bg-white">
+
+            <!-- Copyright -->
+            <div class="text-center py-3">
+            &copy; 2024 Nkosiyapha Ncube. All rights reserved.
+            </div>
+        </div>
+
+        <!-- Bootstrap Icons CDN (Optional) -->
+        <!-- link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css" rel="stylesheet" -->
+
+    </footer>
+</body>
+</html>

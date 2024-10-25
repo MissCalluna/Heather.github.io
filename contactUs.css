@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 2.1rem;
+    font-weight: 600;
+    margin-right: auto;
+}
+
+.logo span {
+    color: #8B0A1A;
+}
+
+.menu-links {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+}
+
+.menu-links li {
+    margin-right: 20px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+.navbar a:hover {
+    color: #8B0A1A;
+}
+
+
+@media (max-width: 768px) {
+    .menu-links {
+        flex-direction: column;
+    }
+
+    .menu-links li {
+        margin-bottom: 10px;
+    }
+}
+
+.contact-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    /* add a border around the contact page */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* add a subtle box shadow */
+    border-radius: 12px;
+    padding: 20px;
+    /* add some padding to create some space between the border and the content */
+    position: relative;
+    top: 50%;
+    /* move the contact page down by 50% of the viewport height */
+    transform: translateY(-50%);
+    /* move the contact page up by 50% of its own height */
+}
+
+.contact-form {
+    width: 50%;
+    margin-right: 20px;
+    margin-left: 100px;
+}
+
+textarea {
+    resize: vertical;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    height: 100px;
+    /* initial height */
+    max-height: 300px;
+    /* maximum height */
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button[type="submit"] {
+    background-color: #8B0A1A;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button[type="submit"]:hover {
+    background-color: #964B00;
+}
+
+.company-details {
+    width: 50%;
+    margin-left: 20px;
+}
+
+.company-details ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.company-details li {
+    margin-bottom: 20px;
+}
+
+.company-details i {
+    margin-right: 10px;
+    font-size: 18px;
+    color: #E2786F;
+}
+
+.company-details li i {
+    margin-right: 10px;
+}
+
+li i:hover {
+    color: #8B0A1A;
+    transition: color 0.2s ease-in-out;
+}
+
+li a[href^="tel:"] {
+    text-decoration: none;
+    color: #000;
+}
+
+li a[href^="mailto:"] {
+    text-decoration: none;
+    color: #000;
+}
+
+@media only screen and (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-form,
+    .company-details {
+        width: 100%;
+        margin: 0;
+    }
+
+    .contact-form {
+        margin-bottom: 40px;
+    }
+}
+
+
+.footer-container {
+    position: absolute;
+    /* or fixed */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #8B0A1A;
+    height: 200px;
+}
+
+.footer-column {
+    flex-basis: 30%;
+    margin: 20px;
+}
+
+.footer-column a {
+    text-decoration: none;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    color: #F5F5DC;
+}
+
+.motto {
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.footer-column h3 {
+    margin-top: 0;
+    color: #F5F5DC;
+}
+
+.footer-column h4 {
+    color: #F5F5DC;
+}
+
+.footer-column p {
+    color: #F5F5DC;
+}
+
+.footer-column a {
+    color: #F5F5DC;
+}
+
+.social-media {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex;
+    z-index: 1;
+}
+
+.social-media li {
+    margin-right: 20px;
+}
+
+.social-media a {
+    color: #F5F5DC;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    text-decoration: underline;
+}
+
+.fab {
+    font-size: 24px;
+}
+
+.footer-column .logo span {
+    color: #F5F5DC;
+}
+
+.social-media li a:hover i {
+    color: #FFC080;
+    /* replace with the color you want */
+}

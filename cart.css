@@ -1,0 +1,209 @@
+body {
+
+    font-family: Arial, sans-serif;
+
+    background-color: #f4f4f4;
+
+}
+
+
+.product-container {
+
+    display: flex;
+
+    justify-content: space-around;
+
+    margin: 20px;
+
+}
+
+
+.product {
+
+    border: 1px solid #ccc;
+
+    padding: 10px;
+
+    background-color: #fff;
+
+    text-align: center;
+
+}
+
+#header h1 {
+    text-align: center;
+}
+
+
+.product img {
+
+    width: 100px;
+
+    height: auto;
+
+}
+
+
+.cart {
+
+    margin: 20px;
+
+    padding: 10px;
+
+    border: 1px solid #ccc;
+
+    background-color: #fff;
+
+}
+
+
+button {
+
+    margin-top: 10px;
+
+}
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    background-color: #f4f4f4;
+
+}
+
+
+.product-container {
+
+    display: flex;
+
+    justify-content: space-around;
+
+    margin: 20px;
+
+}
+
+
+.product {
+
+    border: 1px solid #ccc;
+
+    padding: 10px;
+
+    background-color: #fff;
+
+    text-align: center;
+
+}
+
+
+.product img {
+
+    width: 100px;
+
+    height: auto;
+
+}
+
+
+#cart {
+
+    margin: 20px;
+
+    padding: 10px;
+
+    border: 1px solid #ccc;
+
+    background-color: grey;
+
+}
+
+#cart2 {
+    background-color: grey;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: black;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar h1 {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    position: relative;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #6c0c79;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: plum;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: pink;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+
+
+
+button {
+
+    margin-top: 10px;
+
+}
+
+#cart {
+
+    display: flex;
+    /* Use flexbox for horizontal layout */
+
+    flex-wrap: wrap;
+    /* Allow wrapping to the next line if necessary */
+
+    justify-content: space-around;
+    /* Space out items evenly */
+
+}
+
+
+footer {
+    background: rgb(90, 7, 55);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
